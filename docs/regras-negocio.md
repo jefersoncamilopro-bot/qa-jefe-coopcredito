@@ -41,6 +41,30 @@ Sistema destinado à simulação e contratação de empréstimos por cooperados 
 
 ## 5. Regras de Simulação de Empréstimo
 
+5.1 Apenas cooperados com cadastro completo e status ATIVO podem realizar simulação de empréstimo.
+
+5.2 A simulação de empréstimo não implica na contratação do crédito.
+
+5.3 O cooperado deve informar obrigatoriamente:
+- Valor do empréstimo
+- Quantidade de parcelas
+
+5.4 O valor mínimo do empréstimo deve ser maior que zero.
+
+5.5 O sistema deve validar se o valor solicitado está dentro do limite de crédito do cooperado.
+
+5.6 O número de parcelas deve respeitar os limites definidos pela política de crédito da cooperativa.
+
+5.7 A simulação deve apresentar ao cooperado:
+- Valor total do empréstimo
+- Valor da parcela
+- Taxa de juros aplicada
+
+5.8 O sistema deve permitir múltiplas simulações sem obrigatoriedade de contratação.
+
+5.9 Caso alguma regra de simulação não seja atendida, o sistema deve exibir mensagem clara informando o motivo da reprovação.
+
+
 ## 6. Regras de Contratação
 
 ## 7. Regras de Exceção e Erros
