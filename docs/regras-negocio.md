@@ -90,5 +90,21 @@ Sistema destinado à simulação e contratação de empréstimos por cooperados 
 
 6.8 Caso ocorra falha durante a contratação, o sistema deve cancelar a operação e informar o cooperado.
 
-
 ## 7. Regras de Exceção e Erros
+
+7.1 O sistema deve impedir qualquer operação caso o cooperado esteja com status INATIVO.
+
+7.2 O sistema deve exibir mensagem de erro quando o CPF informado for inválido ou já existente.
+
+7.3 Caso o cooperado tente simular empréstimo sem cadastro completo, o sistema deve bloquear a ação e informar o motivo.
+
+7.4 O sistema deve rejeitar simulações que excedam o limite de crédito do cooperado, informando o valor máximo permitido.
+
+7.5 Em caso de falha na validação de regras de crédito, o sistema deve informar claramente o motivo da reprovação.
+
+7.6 Caso ocorra falha de comunicação com sistemas externos, o sistema deve apresentar mensagem de indisponibilidade temporária.
+
+7.7 O sistema não deve permitir contratação duplicada de empréstimos para a mesma simulação.
+
+7.8 Em caso de erro durante a contratação, nenhuma parcela ou contrato deve ser registrado parcialmente no sistema.
+
