@@ -1,6 +1,3 @@
-por que me apresentou essas regras anteriormente ?
-está faltando regras?
-
 # Regras de Negócio – Sistema de Empréstimos para Cooperados
 
 ## 1. Objetivo do Sistema
