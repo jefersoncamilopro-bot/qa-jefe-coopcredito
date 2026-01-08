@@ -22,16 +22,22 @@ Sistema destinado à simulação e contratação de empréstimos por cooperados 
 
 4.1 O cooperado deve possuir CPF válido e único no sistema.
 
-4.2 O cooperado deve estar com status ATIVO na cooperativa para realizar cadastro ou atualização.
+4.2 O cooperado deve ter idade mínima de 18 anos.
 
-4.3 O cadastro do cooperado deve conter, no mínimo:
+4.3 O cooperado deve estar com status ATIVO na cooperativa para realizar cadastro, simulação ou contratação de empréstimos.
+
+4.4 O cadastro do cooperado deve conter obrigatoriamente:
 - Nome completo
 - CPF
 - Data de nascimento
 - Renda mensal
 - Agência de vínculo
 
-4.4 Cooperados com cadastro incompleto não podem simular empréstimos.
+4.5 Cooperados com cadastro incompleto não podem simular empréstimos.
+
+4.6 Não é permitido o cadastro de cooperados com CPF já existente no sistema.
+
+4.7 O sistema deve permitir atualização cadastral apenas para cooperados ativos.
 
 ## 5. Regras de Simulação de Empréstimo
 
