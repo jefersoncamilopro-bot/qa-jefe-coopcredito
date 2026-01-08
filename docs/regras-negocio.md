@@ -1,31 +1,40 @@
-# Regras de Negócio – Sistema de Crédito Cooperativo
+por que me apresentou essas regras anteriormente ?
+está faltando regras?
+
+# Regras de Negócio – Sistema de Empréstimos para Cooperados
 
 ## 1. Objetivo do Sistema
-Permitir a simulação, análise e contratação de empréstimos pessoais para clientes da cooperativa, respeitando regras de crédito e segurança.
+Sistema destinado à simulação e contratação de empréstimos por cooperados da cooperativa de crédito.
 
-## 2. Fluxo Geral do Crédito
-1. Cadastro do cliente
-2. Simulação do empréstimo
-3. Análise de crédito
-4. Aprovação ou reprovação
-5. Consulta de status do empréstimo
+## 2. Tipos de Usuário
+- Cooperado
+- Operador Interno (Agência / Backoffice)
+- Sistema (Integrações)
 
-## 3. Entidades do Sistema
-- Cliente
-- Empréstimo
-- Parcela
-- Pagamento
+## 3. Fluxo Principal do Sistema
+1. Cooperado realiza cadastro ou atualização cadastral
+2. Cooperado simula empréstimo
+3. Sistema valida regras de crédito
+4. Cooperado confirma contratação
+5. Sistema gera contrato e agenda pagamento
 
-## 4. Regras de Cadastro de Cliente
+## 4. Regras de Cadastro de Cooperado
+
+4.1 O cooperado deve possuir CPF válido e único no sistema.
+
+4.2 O cooperado deve estar com status ATIVO na cooperativa para realizar cadastro ou atualização.
+
+4.3 O cadastro do cooperado deve conter, no mínimo:
+- Nome completo
+- CPF
+- Data de nascimento
+- Renda mensal
+- Agência de vínculo
+
+4.4 Cooperados com cadastro incompleto não podem simular empréstimos.
 
 ## 5. Regras de Simulação de Empréstimo
 
-## 6. Regras de Aprovação de Crédito
+## 6. Regras de Contratação
 
-## 7. Regras de Reprovação
-
-## 8. Regras de Renegociação
-
-## 9. Regras de Exceção e Erros
-
-## 10. Premissas e Restrições
+## 7. Regras de Exceção e Erros
