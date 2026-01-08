@@ -64,7 +64,31 @@ Sistema destinado à simulação e contratação de empréstimos por cooperados 
 
 5.9 Caso alguma regra de simulação não seja atendida, o sistema deve exibir mensagem clara informando o motivo da reprovação.
 
-
 ## 6. Regras de Contratação
+
+6.1 A contratação do empréstimo só pode ocorrer após uma simulação válida realizada pelo cooperado.
+
+6.2 Apenas cooperados com cadastro completo e status ATIVO podem contratar empréstimos.
+
+6.3 O cooperado deve confirmar explicitamente a contratação do empréstimo.
+
+6.4 O sistema deve validar novamente as regras de crédito no momento da contratação.
+
+6.5 Não deve ser permitida a contratação duplicada de um mesmo empréstimo.
+
+6.6 Após a confirmação da contratação, o sistema deve:
+- Gerar o contrato do empréstimo
+- Registrar a operação no sistema
+- Agendar as parcelas para pagamento
+
+6.7 O contrato deve conter, no mínimo:
+- Dados do cooperado
+- Valor contratado
+- Taxa de juros
+- Quantidade e valor das parcelas
+- Data de vencimento da primeira parcela
+
+6.8 Caso ocorra falha durante a contratação, o sistema deve cancelar a operação e informar o cooperado.
+
 
 ## 7. Regras de Exceção e Erros
